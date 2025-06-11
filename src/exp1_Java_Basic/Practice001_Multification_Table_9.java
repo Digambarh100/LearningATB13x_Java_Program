@@ -4,6 +4,7 @@ public class Practice001_Multification_Table_9 {
     public static void main(String[] args) {
         int a = 9;
         System.out.printf("%d x %d = %d%n", a, 1, a * 1);
+       // System.out.printf("%d x %d = %d", a, 1, a * 1).prinln();
         System.out.printf("%d x %d = %d%n", a, 2, a * 2);
         System.out.printf("%d x %d = %d%n", a, 3, a * 3);
         System.out.printf("%d x %d = %d%n", a, 4, a * 4);
