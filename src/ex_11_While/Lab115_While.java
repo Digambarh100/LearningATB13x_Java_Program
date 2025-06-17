@@ -8,10 +8,10 @@ public class Lab115_While {
             i++;
         }
 
-        //  I, C, U
-        int j = 0;
-        for (; j < 10; j++) {
-            System.out.println(j);
-        }
+//        //  I, C, U
+//        int j = 0;
+//        for (; j < 10; j++) {
+//            System.out.println(j);
+//        }
     }
 }

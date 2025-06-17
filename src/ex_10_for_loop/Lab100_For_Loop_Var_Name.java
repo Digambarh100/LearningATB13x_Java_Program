@@ -1,4 +1,4 @@
-package ex_10_For_Loop;
+package ex_10_for_loop;
 
 public class Lab100_For_Loop_Var_Name {
     public static void main(String[] args) {
