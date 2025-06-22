@@ -6,7 +6,7 @@ public class Lab038_Unary_Operator {
         int a = +10;
 //        int a = 10; optional
         int a1 = -110;
-        int result = a+a1;
+        int result = a+a1; //10-110
         System.out.println(a);
         System.out.println(a1);
         System.out.println(result);
@@ -14,6 +14,6 @@ public class Lab038_Unary_Operator {
 
         int b = -1;
         b = b+1;
-        System.out.println(b);
+        System.out.println(b); //0
     }
 }

@@ -17,15 +17,19 @@ public class Lab132_UD_Part1 {
         System.out.println(msg);
 
 
+        System.out.println("==========================================");
         //  3. With Parameters and Without Return Type ( 90%)
-        greet_with_details("Pramod", 65, 100);
-        greet_with_details("Ankit", 100, 120);
+//        greet_with_details("Pramod", 65, 100);
+//        greet_with_details("Ankit", 100, 120);
+        greet_with_details("Digambar",25,56600);
+        greet_with_details("Vasantrao",55,35600);
 
+        System.out.println("==========================================");
         //  4. With Parameters and With Return Type
         int sum =  sum_of_two_numbers(3,4);
         int sum2 = sum_of_two_numbers(190, 900);
         int sum3 = sum_of_two_numbers(2345, 5432);
-        int sum4 = sum_of_three_numbers(2345, 5432, 5432);
+        int sum4 = sum_of_three_numbers(2345, 5432, 5432,2454);
         System.out.println(sum);
         System.out.println(sum2);
         System.out.println(sum3);
@@ -33,7 +37,7 @@ public class Lab132_UD_Part1 {
 
 
         int result = Math.max(3,4); // 4th Type
-
+        System.out.println(result);
 
 
     }
@@ -61,8 +65,8 @@ public class Lab132_UD_Part1 {
         return a+b;
     }
 
-    static int sum_of_three_numbers(int a, int b,int c){
-        return a+b+c;
+    static int sum_of_three_numbers(int a, int b,int c,int d){
+        return a+b+c+d;
     }
 
 

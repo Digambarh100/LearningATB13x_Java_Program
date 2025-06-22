@@ -8,6 +8,6 @@ public class Lab036_Operators_Assignment {
         // = -> Assignment operator
         // 65 -> Literal
 
-        // RHV to the LH
+        // RHV to the LHV
     }
 }

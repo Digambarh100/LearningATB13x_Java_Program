@@ -31,7 +31,7 @@ public class Lab134_Function_Arth {
         } else {
             System.out.println("Enter the int only");
 //            return;
-            System.exit(0);
+            System.exit(0); // which is same as return
         }
 
         System.out.println("Enter the num 2");
@@ -41,7 +41,7 @@ public class Lab134_Function_Arth {
         } else {
             System.out.println("Enter the int only");
 //            return;
-            System.exit(0);
+            System.exit(0);  // which is same as return
         }
 
         int result_sum = sum(a, b);

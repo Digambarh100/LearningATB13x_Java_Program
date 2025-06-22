@@ -6,7 +6,7 @@ public class Lab041_Logical_Operators {
         System.out.println(!a);
 
         boolean b = true;
-        System.out.println(!!b);
+        System.out.println(!!!b);
 
         boolean c= true || false;
 
