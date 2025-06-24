@@ -4,14 +4,14 @@ public class Lab143_String_Functions {
     public static void main(String[] args) {
 
         String name = "Sonal";// 0,1,2,3,4
-        System.out.println(name.length());
-        System.out.println(name.charAt(3));
-        System.out.println(name.charAt(0));
-        System.out.println(name.charAt(4));
+        System.out.println(name.length()); //5
+        System.out.println(name.charAt(3)); //a
+        System.out.println(name.charAt(0)); //S
+        System.out.println(name.charAt(4)); //l
 //        System.out.println(name.charAt(10)); // java.lang.StringIndexOutOfBoundsException
-
-        System.out.println(name.concat(" Patel"));
-
+ name = name.concat(" patil");
+      //  System.out.println(name.concat(" Patel"));
+        System.out.println(name);
         // 3. contains()
         System.out.println(name.contains("om"));
 
@@ -23,14 +23,14 @@ public class Lab143_String_Functions {
 
 
         // 6. indexOf() //  sonal -> ? o
-        System.out.println(name.indexOf('o'));
+        System.out.println(name.indexOf('o')); //m
 
         String s1 = "madam";
         // Returns the index within this string of the
         // first occurrence of the specified substring.
-        System.out.println(s1.indexOf("m"));
+        System.out.println(s1.indexOf("m"));  //0
 
-        System.out.println(s1.lastIndexOf("m"));
+        System.out.println(s1.lastIndexOf("m"));//4
 
 
         // 7. length()

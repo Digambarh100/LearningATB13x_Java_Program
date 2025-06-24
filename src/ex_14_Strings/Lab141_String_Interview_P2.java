@@ -12,19 +12,19 @@ public class Lab141_String_Interview_P2 {
         String s5 = new String("hello"); //  OA = 3
 
         // == -> Comparsion -> String -> this check the locations ref.
-        System.out.println(s1 == s3);
-        System.out.println(s1 == s2);
-        System.out.println(s2 == s3);
+        System.out.println(s1 == s3); //F
+        System.out.println(s1 == s2); //F
+        System.out.println(s2 == s3); //F
 
-        System.out.println(s1 == s4);
-        System.out.println(s3 == s5);
+        System.out.println(s1 == s4); //T
+        System.out.println(s3 == s5); //F
 
         // equals ( content) -> value
 
-        System.out.println(s1.equals(s2));
-        System.out.println(s1.equals(s3));
-        System.out.println(s3.equals(s5));
-        System.out.println(s3.equalsIgnoreCase(s5));
+        System.out.println(s1.equals(s2)); //T
+        System.out.println(s1.equals(s3)); //T
+        System.out.println(s3.equals(s5)); //F
+        System.out.println(s3.equalsIgnoreCase(s5)); //T
 
         //  equalsIgnoreCase -> pramod. Pramod, PRAMOD , PraMod . PramoD -> pramod
         //  == - check for the ref
