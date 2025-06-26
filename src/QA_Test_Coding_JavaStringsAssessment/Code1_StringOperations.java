@@ -1,5 +1,6 @@
 package QA_Test_Coding_JavaStringsAssessment;
 
+//Write a Java program that demonstrates basic string operations including concatenation, length, substring, and character extraction.
 public class Code1_StringOperations {
     public static void main(String[] args) {
         String str1 = "Hello";
