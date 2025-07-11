@@ -103,7 +103,7 @@ class OldPhone implements SIMCard{
 
 enum Covers{
     red("red_pokeman"),
-    blue("blue_pokeman")
+    blue("blue_pokeman");
     private String color;
     Covers(String color){
         this.color =color;
