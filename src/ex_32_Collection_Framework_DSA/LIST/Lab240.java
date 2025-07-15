@@ -1,5 +1,7 @@
 package ex_32_Collection_Framework_DSA.LIST;
 
+import java.util.Iterator;
+
 public class Lab240 {
     public static void main(String[] args) {
         Integer[] arr = new Integer[10]; // Fixed Size
@@ -11,7 +13,7 @@ public class Lab240 {
         // Doesn't grow Automatically,
         // Less elements -> wastage of memory.  100 - Size, only used 10, 90 are waste.
 
-
+        //Iterator
 
     }
 }
