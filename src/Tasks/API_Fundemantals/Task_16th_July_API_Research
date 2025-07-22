@@ -1,0 +1,149 @@
+/================================================ API Fundamentals ====================================================/
+
+Question - 01: Research about How API Works
+Answer:
+An API (Application Programming Interface) works as a messenger between my application and Server.
+Basically API is like a bridge that lets different software systems talk to each other and exchange data.
+
+🍔 Think of an API like a Waiter in a Restaurant:
+- You (the customer) want food 🍕
+- The kitchen (server) makes the food
+- But you don’t go to the kitchen yourself, right?
+- You tell the waiter (API) what you want by ordering from the menu
+
+------------------------------------------------------------------------------------------------------------------------
+
+Question - 02: what happen when you type google.com in browser and how you see the google page and
+               every time you time google.com in the browser then always same process happen?
+Answer:
+Note: Client here is Browser (Chrome, Firefox, Edge etc).
+
+🔤 You Type google.com in the Browser
+- The browser doesn’t understand just "google.com".
+- It automatically adds https:// in front to form a URL → https://google.com
+
+🌍 Browser Needs to Know Where to Go
+- google.com is just a name.
+- The browser needs the actual IP address of Google’s server to connect.
+
+📞 DNS Lookup Happens (Like a Phonebook)
+- The browser asks the DNS (Domain Name System) to translate google.com to an IP address, like 142.250.192.142
+
+🔌 Connect to Google Server
+- With the IP address, the browser sends a request to Google’s server over the internet.
+- TCP (Transmission Control Protocol) + SSL (Secure Sockets Layer) / TLS (Transport Layer Security) Connection:
+    When you combine TCP with SSL:
+        TCP sets up the basic communication channel.
+        SSL runs on top of TCP to encrypt the data.
+
+📄 Fetch the Web Page (HTML Resource)
+- The browser sends an HTTP GET request to the server:
+
+        “Hey Google, give me your homepage.”
+
+📬 Server Responds with HTML
+- The Google server sends back the HTML file for the homepage.
+
+🎨 Browser Beautifies It
+- The browser reads the HTML, loads images, CSS, and scripts.
+- It renders the page nicely — and you see the Google Search Page.
+
+🔁 Does This Happen Every Time You Type google.com?
+Not completely!
+Some parts are skipped using caching:
+- DNS result
+- TCP/SSL connection
+- HTML/CSS/JS/images
+
+So:
+- If you've recently visited google.com, your browser might skip DNS and use the cached IP
+- It might reuse connections or load some resources from cache
+
+But:
+- If you clear cache, restart device, or it’s your first visit, the full process happens again
+
+------------------------------------------------------------------------------------------------------------------------
+
+Question - 03: How many Protocols are there for API/Network.
+Answer:
+There are dozens of protocols, but the most commonly used for APIs are:
+1. HTTP/HTTPS (REST):
+A request-response protocol used by REST APIs to transfer data over the web, usually using JSON.
+
+2. WebSocket:
+A protocol that allows real-time, two-way communication between client and server over a single connection.
+
+3. gRPC (Google Remote Procedure Call):
+A high-performance, binary-based RPC protocol by Google for fast communication between services.
+
+4. SOAP:
+An XML-based protocol for structured messaging in enterprise-level web services.
+
+5. GraphQL:
+A query language and runtime that lets clients request exactly the data they need from an API.
+
+6. MQTT:
+A lightweight publish-subscribe protocol designed for low-bandwidth, IoT and sensor-based communication.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Question - 04: what is the full form of API.
+Answer: 📲➡️🌐 API stands for Application Programming Interface.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Question - 05: Full form of URL.
+Answer: 🌐🔗 URL stand for Uniform Resource Locator.
+
+------------------------------------------------------------------------------------------------------------------------
+Question - 06: what is the max length of the URL?
+Answer:
+✅ Maximum Length of a URL:
+- There is no official limit in the URL standard (RFC 3986), but browsers and servers impose practical limits.
+
+🔢 Common Browser Limits:
+-------------------------------------------------------------------------------------------------------
+          Browser	      |    Max URL Length                                                         |
+-------------------------------------------------------------------------------------------------------
+Internet Explorer	      |   2,083 characters (with a 2,048-character limit for the actual URL path) |
+Chrome	                  |   ~32,000 characters                                                      |
+Firefox	                  |   ~65,000 characters                                                      |
+Safari	                  |   ~80,000 characters                                                      |
+Edge	                  |   ~2,048–8,000 characters                                                 |
+-------------------------------------------------------------------------------------------------------
+
+🛠️ Server-Side Limits (May Vary):
+- Apache: Default limit is 8,192 bytes (8 KB)
+- Nginx: Default limit is 4,096 bytes (4 KB)
+These limits can often be configured.
+
+Even though modern browsers support long URLs, it’s a good practice to keep URLs under 2,000 characters.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Question - 07: How or when the IP address update of our mobile?
+Answer:
+📱 What is an IP Address?
+- An IP address is like your phone’s home address on the internet.
+- It helps websites and apps know where to send data, like messages, videos, or search results.
+
+🔄 When Does Your Mobile’s IP Address Change?
+- Your mobile phone can get a new IP address in the following situations:
+1. When You Switch Networks
+    If you move from Wi-Fi to mobile data, or connect to a different Wi-Fi, your IP will change.
+        🌐 Wi-Fi → gets IP from your home router
+        📶 Mobile Data → gets IP from your mobile company (Jio, Airtel, etc.)
+
+2. When You Reconnect to the Same Network
+- If you turn off and on Wi-Fi or airplane mode, your device might get a new IP from the router or mobile tower.
+
+3. Restarting the Phone
+- Restarting may lead to a fresh connection, giving a different IP from the network provider.
+
+4. After a Certain Time (Dynamic IP)
+- Most ISPs (internet providers) use dynamic IPs, which change automatically after a few hours or days.
+
+📌 Summary: Your mobile's IP address changes when you switch networks, reconnect,
+or after some time automatically — because most networks give temporary (dynamic) IPs.
+
+------------------------------------------------------------------------------------------------------------------------

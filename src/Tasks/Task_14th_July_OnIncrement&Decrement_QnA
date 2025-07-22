@@ -1,0 +1,106 @@
+/=============================================== Post and Pre Increment_Decrement Operators ===============================================/
+
+//💻 Question 1
+        int a = 20;
+        int b = a++;
+        System.out.println(“what will be the value of B “ +b);
+        System.out.println(“what will be the value of A “ +a);
+🧠 Answer:
+        b = 20
+        a = 21
+
+------------------------------------------------------------------------------------------------------------------------
+
+//💻 Question 2
+        int  a = 20;
+        int  b = a++;
+        System.out.println(“what will be the value of a “ +a);
+        System.out.println(“what will be the value of b “ +b);
+        System.out.println(“what will be the value of a “ +a);
+🧠 Answer:
+        a = 21
+        b = 20
+        a = 21
+
+------------------------------------------------------------------------------------------------------------------------
+
+//💻 Question 3
+        int  a = 20;
+        System.out.println(a);
+        int  b = a++;
+        System.out.println(b);
+        System.out.println(a);
+🧠 Answer:
+        a = 20
+        b = 20
+        a = 21
+
+------------------------------------------------------------------------------------------------------------------------
+
+//💻 Question 4
+        int c = 5;
+        int d = ++c;
+        System.out.println(c);
+        System.out.println(d);
+🧠 Answer:
+        c = 6
+        d = 6
+
+------------------------------------------------------------------------------------------------------------------------
+
+//💻 Question 5
+        int  c = 10;
+        int  d = c--;
+        System.out.println(c);
+        System.out.println(d);
+🧠 Answer:
+        c = 9
+        d = 10
+
+------------------------------------------------------------------------------------------------------------------------
+
+//💻 Question 6
+        int  c = 10;
+        int  d = --c;
+        System.out.println(c);
+        System.out.println(d);
+🧠 Answer:
+        c = 9
+        d = 9
+
+------------------------------------------------------------------------------------------------------------------------
+
+//💻 Question 7
+        int a = 110;
+        int b = a--;
+        System.out.println("the value of b is " +b);
+        int d = --a;
+        System.out.println("the value of D is " + d);
+        System.out.println("the value of A is " +a);
+        int l = b--;
+        System.out.println("the value of l is " +l);
+        System.out.println("the value of b is " +b);
+        int s = d-- + --b;
+        System.out.println("the value of S is " +s);
+        s = --d + --b;
+        System.out.println("the value of S is " +s);
+        System.out.println("the value of b is " +b);
+        System.out.println("what will be the value of "+ b++);
+        System.out.println("what will be the value of "+ ++b);
+        System.out.println("what will be the value of "+ b--);
+        System.out.println("what will be the value of "+ --b);
+🧠 Answer:
+        b = 110
+        d = 108
+        a = 108
+        l = 110
+        b = 109
+        s = d-- + --b = 108 + 108 = 216
+        s = --d + --b = 106 + 107 = 213
+        b = 107
+        b = 107
+        b = 109
+        b = 109
+        b = 107
+
+------------------------------------------------------------------------------------------------------------------------

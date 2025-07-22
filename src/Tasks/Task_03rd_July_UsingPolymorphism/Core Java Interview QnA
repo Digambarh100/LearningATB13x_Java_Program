@@ -1,0 +1,106 @@
+//============================================================ Core Java Interview QnA ============================================================//
+
+1) If there is no main method, what will happen?
+Ans: If there is no main method in a Java program, the program will not run and will throw a runtime error when you try to execute it
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+2) Does main method return any value?
+Ans: No, the main method does not return any value — its return type is void.
+public static void main(String[] args)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+3) what is main method?
+Ans: The main method in Java is the entry point of any standalone Java application.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+4) (String[] args) what is this in main method?
+Ans:the part (String[] args) is the parameter of the method. Let's break it down:
+    String[] — This declares an array of Strings.
+    args — This is the name of the array (you can rename it, but "args" is conventional).
+    This array stores command-line arguments passed to your Java program when you run it.
+    For example, if you run your program like this:
+    java MyProgram Hello World 123
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+5) main(String[] args) in this instead of args can i write something else like java, or Selenium like this (String[] Selenium)?
+Ans: In Java, you can rename the parameter name inside the main method —
+the name args is just a convention. You can use any valid variable name like:
+     public static void main(String[] Selenium)
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+6) public static void main(string args[]) { } is this right main method, is this will work? ([] position is changed)
+Ans: This will NOT work — and here’s why:
+     1. string should be String (Java is case-sensitive)
+     2. string (lowercase) is not a recognized class in Java.
+     3. String (uppercase) is a valid class in java.lang package.
+     ✅ The position of [] is actually flexible in Java — both of the following are valid:
+         String[] args
+         String args[]
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+7) public static void main(string[]args) { }, is this right main method, is this will work? (i have removed the space between []args)
+Ans : This will NOT work. Here's why:
+      🚫 Problem:
+      1. You wrote string instead of String.
+      2. Java is case-sensitive, and string (lowercase) is not a valid class.
+      3. String (uppercase S) is a class from java.lang, and it's required here.
+      ✅ Correct version:
+      public static void main(String[] args) { }
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+8) public static void main(string...args) { }, is this right main method, is this will work? ( i have removed [] and added ...)
+Ans : ❌ This will NOT work — because of one key issue:
+      🔴 string should be String (Java is case-sensitive). Lowercase string is not valid.
+      ✅ Correct version using varargs (ellipsis ...):
+
+      public static void main(String... args) { }
+      Yes — this version will work! Here's why:
+      String... args is a valid way to declare a varargs (variable-length) array of Strings.
+      It is equivalent to String[] args.
+      The Java Virtual Machine (JVM) accepts either String[] or String... in the main method.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+9) static public void main(String[] args) { is this valid main mehtod ?
+Ans : ✅ Yes, this is a valid main method in Java:
+      Java allows you to swap the order of modifiers like public and static.
+      So both of the following are correct:
+      public static void main(String[] args)
+      static public void main(String[] args)
+
+      🔍 Why is it valid?
+      In Java:The order of modifiers (like public and static) doesn’t affect the meaning.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+10) public void static main(String[] args) {} is this valid main method?
+Ans : ❌ No, this is NOT a valid main method in Java:
+       Why?
+       Because the order of modifiers matters in terms of syntax.
+       While public static is valid and static public is valid, you cannot insert another keyword (like return type void) between them.
+
+       In Java, modifiers (like public and static) must come before the return type and must be grouped together properly.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+11) public static main void (String[] args) {} is this valid main method?
+Ans: ❌ No, this is not valid in Java:
+      The order of the method signature must be:
+      [modifiers] returnType methodName(parameterList) { ... }
+      But in your example:
+      main is the method name, but you've placed it before the return type void.
+      The return type must come immediately after the modifiers (public static), and before the method name.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+12) Who Gets Highest Priority in Execution?
+Ans: main method has highest priority in execution
+
+-----------------------------------------------------------------------------------------------------------------------------------------

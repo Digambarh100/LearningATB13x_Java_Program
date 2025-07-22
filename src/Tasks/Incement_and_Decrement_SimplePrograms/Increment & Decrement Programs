@@ -1,0 +1,83 @@
+//============================================================ Increment & Decrement Programs ============================================================//
+
+💻Program 1:
+int a = 5;
+int b = a++;
+System.out.println("a: " + a + ", b: " + b);
+
+🧠Logic:
+Before the operation:
+a = 5
+Assign to b: The value of a (which is 5) is assigned to b.
+So now: b = 5
+Increment a: After assigning the value to b, a is incremented by 1.
+Now: a = 6
+
+Answer: a: 6, b: 5
+
+-----------------------------------------------------------------------------------------------------------------------
+
+💻Program 2:
+int i = 1;
+i = i++ + ++i;
+System.out.println(i); // ?
+
+🧠Logic:
+i = 1 + 3
+
+Answer: i = 4
+
+-----------------------------------------------------------------------------------------------------------------------
+
+💻Program 3:
+int x = 5;
+System.out.println(x++ + ++x); // ?
+x = 5 + 7
+
+Answer: x = 12
+
+-----------------------------------------------------------------------------------------------------------------------
+
+💻Program 4:
+int x = 5;
+System.out.println(++x); // Output: ?
+System.out.println(x++); // Output: ?
+System.out.println(x); // Output: ?
+
+🧠Logic:
+++x: 6 (pre increment. So, 5+1)
+x++: 6 (post increment. So, 6)
+x: 7 (x = 6 after post increment became x = 6+1 = 7)
+
+-----------------------------------------------------------------------------------------------------------------------
+
+💻Program 5: Interview Question
+int a = 5;
+int b = a++ + ++a;
+System.out.println("a: " + a); // Output: ?
+System.out.println("b: " + b); // Output: ?
+
+🧠Logic:
+a = 5 + 1 + 1 = 7
+b = 5 + 7
+
+Answer:
+b: 5 + 7 = 12
+a: 7
+
+-----------------------------------------------------------------------------------------------------------------------
+
+💻Program 6: Interview Question
+int x = 5;
+int y = x++ + ++x + x++ + ++x;
+System.out.println("x = " + x + ", y = " + y);
+
+🧠Logic:
+X = 9
+Y = 5 + 7 + 7 + 9 = 28
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+
+

@@ -1,0 +1,112 @@
+//============================================================ Constructor Interview QnA ============================================================//
+
+1. What is a constructor in Java?
+Ans: Constructor is a special function, it is invoked or automatically called when an object is initialized / created.
+-	Class Name and Constructor name should be same.
+-	It doesn’t have return type even void.
+
+Imagine:
+•	Class = Blueprint for a person
+•	Constructor = Brahma (the creator)
+•	Object = A person Brahma creates
+
+-----------------------------------------------------------------------------------------------------------------------
+
+2. How is a constructor different from a method?
+
+✅Constructor:
+
+Feature	       | Description
+Purpose	       |  Used to initialize a new object.
+Name           |  Must have the same name as the class.
+Return Type	   |  No return type, not even void.
+Call           |  Called automatically when an object is created using new.
+Overloading	   |  Can be overloaded (multiple constructors with different parameters).
+Inheritance	   |  Not inherited, but the subclass can call superclass constructor using super().
+
+✅Method:
+
+Feature	       | Description
+Purpose	       |  Defines the behavior or functionality of an object.
+Name           |  Can have any valid name.
+Return Type	   |  Must have a return type (int, void, String, etc.).
+Call           |  Must be called explicitly using the object or class name.
+Overloading	   |  Can also be overloaded.
+Inheritance	   |  Inherited by subclasses (if not private), and can be overridden.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+3. What are the different types of constructors in Java?
+✅ Default Constructor / Non - parameterized Constructor:
+-	No parameters.
+-	Automatically provided by Java if no constructor is written.
+-	Used to assign default values.
+
+✅ Parameterized Constructor:
+-	Takes arguments to assign specific values at object creation.
+Copy Constructor:
+-	Creates a new object by copying values from another object.
+-	Not built-in like C++, but you can define your own.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+4. What is constructor overloading?
+Ans: Constructor overloading means having multiple constructors in the same class with different parameter lists.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+5. Can a constructor be final, static, or abstract?
+Ans: A constructor can NOT be final, static, or abstract.
+
+final ❌
+
+    Why not?
+    final means a method cannot be overridden.
+    But constructors are never inherited, so there's nothing to override — making final meaningless for constructors.
+
+🔹 static ❌
+
+    Why not?
+    static means something belongs to the class, not object.
+    But constructors are used to create objects, so they must work on the instance level — not class level.
+
+🔹 abstract ❌
+
+    Why not?
+    abstract means a method has no body and must be implemented by a subclass.
+    But constructors:
+
+        Always have a body, and
+
+        Are not inherited, so they can’t be overridden in a subclass — making abstract invalid.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+6. Can we call a constructor explicitly inside another constructor?
+Ans: Yes, we can call a constructor explicitly from another constructor using this() in Java.
+
+-----------------------------------------------------------------------------------------------------------------------
+7. What happens if you don’t define a constructor in a class?
+Ans: If you don’t define any constructor, Java will automatically add it.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+💻Program 1: What is a default constructor? Give one example, Write a code for that.
+🔍 // Check Default_Constructor.java file
+
+🧠 Ex: Brahma says: “Let there be a goat.”
+He creates one with default settings:
+•	Name = "Unknown"
+•	Age = 0
+
+-----------------------------------------------------------------------------------------------------------------------
+
+💻Program 2: How do you create a parameterized constructor? Give one example, Write a code for that.
+🔍 // Check Parameterized_Constructor.java file
+
+🧠 Ex: Brahma creates a person:
+•	Name: Sita
+•	Age: 22
+So, he calls the constructor with: new Person ("Sita", 22)
+
+-----------------------------------------------------------------------------------------------------------------------

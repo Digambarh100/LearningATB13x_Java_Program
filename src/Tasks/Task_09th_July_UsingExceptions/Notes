@@ -1,0 +1,9 @@
+/======================================================= Observations =======================================================/
+
+1. ArithmeticException - Occurs when / by zero.
+2. NumberFormatException - Occurs when input give is String instead of int.
+3. ArrayIndexOutOfBoundsException - Occurs when no input found
+4. NullPointerException  - Occurs when string input = null (string.length()).
+5. We cant use .equal() with int primitive datatype.
+6. int can’t be null; only reference types (like Integer) can.
+    ex: int a = Integer.parseInt(args[0]);

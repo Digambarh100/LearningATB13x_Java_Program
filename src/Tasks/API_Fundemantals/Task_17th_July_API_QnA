@@ -1,0 +1,306 @@
+/======================================================================= API QnA ======================================================================/
+
+Question - 01: Learn about what is a microservice.
+Answer:
+🧩 What is a Microservice?
+- A microservice is a small, independent piece of an application that does one specific job, and can work alone or with other microservices.
+
+🍕 Real-Life Example (Pizza App):
+Imagine you have an app to order pizza. Instead of building the whole app as one big block (called monolith), you split it like this:
+    🍕 Order Service – handles new orders
+    💰 Payment Service – handles payments
+    🚚 Delivery Service – tracks delivery
+    👤 User Service – manages users and login
+
+Each of these is a microservice.
+🔄 How They Work:
+    - Each microservice is built, deployed, and scaled independently
+    - They talk to each other using APIs (like REST or gRPC)
+    - If one fails, the others can still work
+
+✅ Benefits:
+    - Easy to maintain and update
+    - Scales better (only scale what's needed)
+    - Faster development by different teams
+
+📌 Summary:
+    - A microservice is a small, self-contained part of an app that does one task well and works together with others to build a complete system.
+
+ ---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 02: About what is a web service.
+Answer:
+🌐 What is a Web Service?
+    - A web service is a way for two different computers or applications to talk to each other over the internet using standard web protocols like HTTP.
+
+💬 How it works:
+    - You (client) send a request to a web service
+    - The service processes the request
+    - Sends back a response (usually in XML or JSON format)
+
+📦 Example Web Services:
+    🌦️ Get weather info
+    🛍️ Check product prices
+    🧾 Online payments
+    📧 Send SMS or emails
+
+🔑 Summary:
+    - A web service is like a digital waiter: your app asks for something, and it brings the data
+    from another server over the web.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 03: What is Cookies?
+Answer:
+🍪 What are Cookies?
+    - A cookie is a small piece of data that a website saves in your browser to remember you or your activity.
+
+🧠 Real-Life Example:
+Imagine you log in to a website like Amazon.
+The site gives your browser a cookie that says:
+    “This user is logged in as Lipi.”
+Next time you visit, the website checks the cookie and says:
+    “Ah! Welcome back, Lipi!”
+
+📦 What Can Cookies Store?
+    ✅ Login info (so you don’t log in every time)
+    ✅ Items in your shopping cart
+    ✅ Preferences (like language or theme)
+    ✅ Tracking info (for ads or analytics)
+
+🔒 Are Cookies Safe?
+    ✅ Cookies are just text — they can’t harm your system
+    ❗ But they can be used for tracking your activity across websites
+
+📌 Summary:
+    - A cookie is a small file stored in your browser that helps websites remember who you are and what
+    you did, like staying logged in or saving your settings.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 04: What is Server?
+Answer:
+🖥️ What is a Server?
+    - A server is a special computer that stores data, websites, or apps, and sends them to other devices
+    (like your phone or browser) when requested.
+
+📦 Real-Life Example:
+Think of a server like a restaurant kitchen:
+    - You (the client) place an order (request)
+    - The kitchen (server) prepares the food (data)
+    - The waiter (API/Internet) brings it to you (response)
+
+🔄 What Does a Server Do?
+    🌐 Hosts websites (like google.com)
+    📤 Sends files, images, or videos
+    📩 Handles emails
+    📲 Responds to app/API requests
+
+👥 Who Talks to the Server?
+    - Your browser (when you visit a website)
+    - Apps (like Instagram or Swiggy)
+    - Other servers (in complex systems)
+
+📌 Summary:
+    - A server is a computer that’s always ready to receive requests and send back data — it powers everything from websites to apps.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 05: What is LocalHost
+Answer:
+🏠 What is Localhost? (Simple Explanation)
+    - Localhost means your own computer. It is used when a program or browser needs to talk to a server
+      running on the same machine.
+
+🧠 Simple Meaning:
+    - Localhost = "This computer right here"
+
+🔢 Technical Info:
+    - Localhost IP address is always: 127.0.0.1
+    - It’s like a shortcut for your computer to talk to itself
+
+🔧 Example Use:
+    When you build a website or API on your own laptop for testing:
+        You open browser and go to http://localhost:3000
+        That means: "Hey, show me the website running on my own computer at port 3000"
+
+📌 Summary:
+    - Localhost is a special address that points to your own computer, used mostly by developers to test websites or
+      apps before putting them online.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 06: What is Domain?
+Answer:
+🌐 What is a Domain? (Simple Explanation)
+    A domain is the name of a website that you type into the browser to visit it — like google.com or youtube.com.
+
+🧠 Think of it Like This:
+    - A domain is your website’s address on the internet
+    - Just like your home address helps people find your house, a domain helps browsers find your website
+
+🔢 Behind the Scenes:
+    - Every website lives on a server with an IP address (e.g., 142.250.192.142)
+    - But IPs are hard to remember
+    - So we use domains like google.com, which the browser converts to an IP using DNS
+
+🧱 Structure of a Domain:
+
+Example: www.google.com
+Part	Meaning
+www	Subdomain (optional)
+google	Domain name
+.com	Top-Level Domain (TLD)
+
+📌 Summary:
+    - A domain is the easy-to-remember name of a website that points to the actual server on the internet.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 07: What is Endpoint in the URL?
+Answer:
+📍 What is an Endpoint in a URL? (Simple Explanation)
+    - An endpoint is the specific part of a URL that tells the server what data or action you are asking for.
+
+🔧 Example:
+Let’s say you have this URL:
+https://api.example.com/users/123
+    https://api.example.com → Base URL (the main server)
+    /users/123 → Endpoint (what data you want)
+
+🟢 This endpoint means:
+    - "Get me the details of the user with ID 123."
+
+🧱 Structure of an API URL:
+--------------------------------------------------------------------------------------
+       Part	     |           Example	       |                Meaning              |
+--------------------------------------------------------------------------------------
+Base URL	     |    https://api.example.com  |	     Main server address         |
+Endpoint	     |         /users/123	       |      Specific resource or action    |
+Query Parameters |	      ?sort=asc	           |  Extra info like sorting or filters |
+--------------------------------------------------------------------------------------
+
+📌 Summary:
+    - An endpoint is the path in a URL that tells the server what specific thing you
+      want to access or do, like /login, /products, or /search?q=laptop.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 08: What is the Difference between HTTP and HTTPS?
+Answer:
+🔐 Difference Between HTTP and HTTPS
+------------------------------------------------------------------------------------------------
+      Feature	  |              HTTP	            |                HTTPS                     |
+------------------------------------------------------------------------------------------------
+🔒 Full Form	  |    HyperText Transfer Protocol	|   HyperText Transfer Protocol Secure     |
+🔐 Security	      |           ❌ Not secure	        |        ✅ Encrypted using SSL/TLS        |
+🌐 URL Format	  |         http://example.com	    |            https://example.com           |
+🧑‍💻 Data Safety	  |     Data is sent as plain text	|   Data is encrypted( safe from hackers)  |
+📶 Used For	      |      Basic websites or testing	|   Secure sites (banking, login pages)    |
+🔐 Lock Icon	  |         ❌ No lock in browser	|         ✅ Lock 🔒 shown in browser      |
+------------------------------------------------------------------------------------------------
+
+🧠 Simple Explanation:
+    - HTTP: Just sends and receives data — but anyone can see it if they intercept it.
+    - HTTPS: Adds a security layer (SSL/TLS) so your data is private and protected.
+
+📌 Summary:
+    - HTTPS = HTTP + Security
+    - Use HTTPS when you care about privacy, security, and trust — which is almost always!
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 09: What is CRUD? and which methods are used for this and give some details about those methods.
+Answer:
+🧱 What is CRUD? (Simple Explanation)
+    - CRUD stands for Create, Read, Update, Delete — the four basic operations you can
+      perform on data in a database or through an API.
+
+🌐 HTTP Methods Used for CRUD in APIs:
+------------------------------------------------------------------------------------------------------------------------------
+  CRUD Operation | HTTP Method   |   Example Endpoint     |             Description              |         Task              |
+------------------------------------------------------------------------------------------------------------------------------
+     Create      |     POST      |        /users          | Adds a new user or resource          | Register a new user       |
+     Read        |     GET       |  /users or /users/1    | Fetches all users or a specific user | View user(s)              |
+     Update      | PUT or PATCH  |        /users/1        | Updates an existing user's data      | Edit or update user info  |
+     Delete      |    DELETE     |        /users/1        | Deletes a specific user              | Delete user account       |
+------------------------------------------------------------------------------------------------------------------------------
+
+📌 Summary:
+    - CRUD is the standard way to manage data, and it's implemented in web apps using HTTP methods like POST, GET, PUT, and DELETE.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 10: What is Payload, Header, Status code?
+Answer:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        Part      |               Meaning                                |            Think of it as           |                  Example                                           |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      Payload     | Actual data sent in a request or response            | What you're trying to send/receive  | { "name": "Lipi", "email": "lipi@example.com" }                    |
+      Header      | Extra info sent with request or response (metadata)  | Info about the message              | Content-Type: application/json (or) Authorization: Bearer <token>  |
+    Status Code   | 3-digit number showing result of the request         | How did the request go?             | 200 OK, 201 Created, 404 Not Found, etc.                           |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🔧 Common Examples:
+----------------------------------
+     Code      |   Meaning       |
+----------------------------------
+     200       | ✅ OK (Success) |
+     201       | ✅ Created      |
+     400       | ❌ Bad Request  |
+     401       | ❌ Unauthorized |
+     404       | ❌ Not Found    |
+     500       | ❌ Server Error |
+----------------------------------
+
+Question - 11: What is Load Balancer? (Research about this)
+Answer:
+⚖️ What is a Load Balancer?
+    - A Load Balancer is like a traffic controller for servers.
+    - It distributes incoming network traffic across multiple servers so that no single server gets overloaded.
+
+🧠 Think of it as:
+    - A person at a restaurant entrance, sending guests to different tables so no waiter is overwhelmed.
+
+✅ Why Use a Load Balancer?
+    🧍‍♂️ Handles more users smoothly (high availability)
+    🔁 Redirects traffic if one server fails (fault tolerance)
+    ⚡ Improves speed and performance (better response time)
+
+🔧 Example:
+You visit example.com, and behind the scenes:
+    - Load balancer receives the request
+    - It checks which of the backend servers (Server A, B, or C) is free
+    - Sends your request to the least busy server
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question - 12: What is Client and Server?
+Answer:
+🧑‍💻 Client
+    - A client is any device or app (like a browser) that sends a request to get some data or service.
+
+🧠 Think of it as:
+    - A customer in a restaurant asking for food.
+
+🔧 Examples:
+    - Chrome browser asking Google for search results
+    - Mobile app requesting weather data
+    - Postman tool testing an API
+
+🖥️ Server
+    - A server is a computer or system that receives requests from clients and sends back the data or service.
+
+🧠 Think of it as:
+    - The kitchen in a restaurant that prepares and serves the food.
+
+🔧 Examples:
+    - Google’s servers sending search results
+    - Backend API that returns user data
+    - A file server providing downloadable files
+
+🔁 Simple Flow:
+Client (Browser)   ➡️  sends request to  ➡️  Server (Website)
+Server             ➡️  sends response to ➡️  Client
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
