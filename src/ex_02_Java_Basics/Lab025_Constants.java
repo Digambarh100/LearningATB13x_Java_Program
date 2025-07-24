@@ -6,7 +6,8 @@ public class Lab025_Constants {
 //        aa = 11;
         System.out.println(aa);
 
-        final float PI = 3.14f;
+        final float PI = 3.14F;
+        System.out.println(PI);
 
 
     }

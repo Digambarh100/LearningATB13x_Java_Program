@@ -10,5 +10,6 @@ public class Lab014_Variables {
     }
 
     public static void main() {
+
     }
 }

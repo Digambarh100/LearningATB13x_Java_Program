@@ -8,5 +8,6 @@ public class Lab018 {
         int this_is_a_vari_long_name_in_the_class_hello_$_akakak = 89;
         //System.out.println(_);
         System.out.println($);
+        System.out.println(yest);
     }
 }

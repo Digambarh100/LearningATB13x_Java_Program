@@ -34,6 +34,7 @@ public class Lab_Static_Variable {
         System.out.println(t.i);//10
         System.out.println(Lab_Static_Variable.i);//10
         System.out.println(i);//10
+    //    int b =15;
 
         System.out.println(b);  // 0  -> default value of int
     }
